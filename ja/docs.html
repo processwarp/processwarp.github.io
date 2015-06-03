@@ -1,0 +1,36 @@
+---
+layout:  page
+title:   ドキュメント
+permalink: /ja/docs/
+lang:    ja
+---
+
+<h2>アプリケーション開発者向けドキュメント</h2>
+<ul class="post-list">
+  {% for post in site.posts %}
+  {% if post.category == "appdev" %}
+  <li>
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    {% if post.lang == "en" %}
+    （英語）
+    {% endif %}
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+<h2>PROCESS WARP開発ドキュメント</h2>
+<ul class="post-list">
+  {% for post in site.posts %}
+  {% if post.category == "libdev" %}
+  <li>
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    {% if post.lang == "en" %}
+    （英語）
+    {% endif %}
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>

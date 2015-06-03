@@ -1,23 +1,26 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>PROCESS WARP</title>
 
-<div class="home">
+    <script type="text/javascript">
+      var LANG_MAP = {
+      "ja":    "ja"      
+      };
 
-  <h1 class="page-heading">Posts</h1>
+      var code = window.navigator.language || window.navigator.userLanguage || "en";
+      if (code.substr(0,2) !== "zh") { code = code.substr(0,2); }
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      var language = LANG_MAP[code];
+      if (!language) { language = "en"; }
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+      document.location = language + "/";
+    </script>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <noscript>
+      <meta http-equiv="refresh" content="0;URL='en/'" />
+    </noscript>
 
-</div>
+  </head>
+</html>

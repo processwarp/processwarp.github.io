@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 1200 500" width="1200" height="500">
+
+  <!-- ufo -->
+  <g id="ufo" stroke="dimgray" stroke-width="6"
+     transform="translate(600,80) scale(1.8,1.8)" >
+    <circle cx="0" cy="100" r="100" fill="darkgray"/>
+    <circle cx="-75" cy="165" r="48" fill="orange"/>
+    <circle cx="75" cy="165" r="48" fill="orange"/>
+    <circle cx="0" cy="165" r="50" fill="gold"/>
+    <circle cx="0" cy="60" r="30" fill="skyblue" stroke-width="2"/>
+    <path d="M100,100 l75,75 h-350 l75,-75" fill="darkgray"
+	  stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="-100" y1="100" x2="100" y2="100" stroke-width="2"/>
+  </g>
+
+  <rect x="0" y="0" width="1200" height="500" fill="white"/>
+
+  <!-- laptop -->
+  <g id="laptop" fill="white" stroke="dimgray"
+     transform="translate(480, 60) scale(0.5,0.5)">
+    <rect x="-180" y="0" width="360" height="240" rx="15" ry="15" stroke-width="6"/>
+    <rect x="-160" y="30" width="320" height="180" rx="2" ry="2" stroke-width="2"/>
+    <circle cx="0" cy="15" r="4" fill="dimgray"/>
+    <path d="M-220,230 h440 v15 q0,15,-30,15 h-380 q-30,0,-30,-15 z" stroke-width="6"/>
+    <path d="M50,230 q0,10,-10,10 h-80 q-10,0,-10,-10 " fill="none" stroke-width="2"/>
+  </g>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#laptop"
+       transform="translate(240,0)"/>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#laptop"
+       transform="translate(-120,140)"/>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#laptop"
+       transform="translate(120,140)"/>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#laptop"
+       transform="translate(360,140)"/>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#laptop"
+       transform="translate(-240,280)"/>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#laptop"
+       transform="translate(0,280)"/>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#laptop"
+       transform="translate(240,280)"/>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#laptop"
+       transform="translate(480,280)"/>
+
+  <mask id="masks" maskUnits="userSpaceOnUse" x="0" y="0" width="1200" height="500">
+    <rect id="mask-laptop" x="-159" y="31" width="318" height="178"
+	  transform="translate(480, 60) scale(0.5,0.5)" fill="white" fill-rule="evenodd"/>
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mask-laptop"
+	 transform="translate(240,0)"/>
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mask-laptop"
+	 transform="translate(-120,140)"/>
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mask-laptop"
+	 transform="translate(120,140)"/>
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mask-laptop"
+	 transform="translate(360,140)"/>
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mask-laptop"
+	 transform="translate(-240,280)"/>
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mask-laptop"
+	 transform="translate(0,280)"/>
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mask-laptop"
+	 transform="translate(240,280)"/>
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mask-laptop"
+	 transform="translate(480,280)"/>
+  </mask>
+
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ufo"
+       mask="url(#masks)"/>
+</svg>

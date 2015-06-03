@@ -1,0 +1,78 @@
+---
+layout: default
+title: PROCESS WARP
+lang: en
+---
+
+<div class="home">
+  <div class="container-fluid" style="background-image: url('/img/home/clip0.jpg'); background-repeat: no-repeat; background-position:center center; background-size:cover; color:#fff;">
+    <div class="row">
+      <h6 class="text-right col-sm-10 col-sm-offset-1" style="color:gray;">
+	Image by
+	<a href="https://www.flickr.com/photos/maleny_steve/205510696/">Serendigity</a>
+	.
+      </h6>
+      <div class="visible-sm visible-md visible-lg col-sm-12">
+	<h1 class="col-sm-12 visible-sm" style="margin-top:0.5em;"></h1>
+	<h1 class="col-sm-12 visible-md visible-lg" style="margin-top:1em;"></h1>
+      </div>
+      
+      <h2 class="visible-xs">
+	I want to connect computer's process spaces* each other to use it free likes to SF!
+      </h2>
+      <h1 class="text-center col-sm-10 col-sm-offset-1 visible-sm visible-md visible-lg">
+	I want to connect computer's process spaces*<br>
+	each other to use it free likes to SF!
+      </h1>
+      <div class="visible-sm visible-md visible-lg col-sm-12">
+	<h1 class="col-sm-12 visible-sm" style="margin-top:0.5em;"></h1>
+	<h1 class="col-sm-12 visible-md visible-lg" style="margin-top:1em;"></h1>
+      </div>
+      <p class="text-right col-sm-10 col-sm-offset-1"
+	 style="white-space:nowrap;">
+	"process space" mean resource to calculate<wbr>
+	likes to processor and main memory.
+      </p>
+    </div>
+  </div>
+  
+  <div class="container-fluid" style="margin-top:1em;">
+    <div class="row">
+      <div class="col-sm-5 col-sm-offset-1">
+	<img src="/img/home/clip1.svg" width="100%"/>
+	<p>
+	  Connect several computers, server, PC, smart phone, web browser to each other without choosing the type.
+	  Share the process space in the connected computer, you can pass application alive to another computer freely.
+	</p>
+      </div>
+      <div class="col-sm-5">
+	<img src="/img/home/clip2.svg" width="100%"/>
+	<p>
+	  Process space will change flexibly in accordance with the environment.
+	  Process space will change network depend on environment.
+	  
+	  Sometimes, it will do processing distributed one application to a number of computer,
+	  and also do processing with one computer as offline applications.
+	  (Under develop)
+	</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <h2 class="col-sm-10 col-sm-offset-1">News</h2>  
+    </div>
+
+    {% for post in site.posts %}
+    {% if post.lang != "ja" and post.category == "news" %}
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+	<h4>
+	  <span class="label label-default">{{ post.date | date: "%b %-d, %Y" }}</span>
+	  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	</h4>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>

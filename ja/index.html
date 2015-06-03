@@ -1,0 +1,78 @@
+---
+layout: default
+title: PROCESS WARP
+lang: ja
+---
+
+<div class="home">
+  <div class="container-fluid" style="background-image: url('/img/home/clip0.jpg'); background-repeat: no-repeat; background-position:center center; background-size:cover; color:#fff;">
+    <div class="row">
+      <h6 class="text-right col-sm-10 col-sm-offset-1" style="color:gray;">
+	Image by
+	<a href="https://www.flickr.com/photos/maleny_steve/205510696/">Serendigity</a>
+	.
+      </h6>
+      <div class="visible-sm visible-md visible-lg col-sm-12">
+	<h1 class="col-sm-12 visible-sm" style="margin-top:0.5em;"></h1>
+	<h1 class="col-sm-12 visible-md visible-lg" style="margin-top:1em;"></h1>
+      </div>
+      
+      <h2 class="visible-xs">
+	SFのように相互接続したプロセス空間*で自由にアプリケーションを使いたい。
+      </h2>
+      <h1 class="text-center col-sm-10 col-sm-offset-1 visible-sm">
+	SFのように相互接続した<br>
+	プロセス空間*で自由に<br>
+	アプリケーションを使いたい。
+      </h1>
+      <h1 class="text-center col-sm-10 col-sm-offset-1 visible-md visible-lg">
+	SFのように相互接続したプロセス空間*で<br>
+	自由にアプリケーションを使いたい。
+      </h1>
+      <div class="visible-sm visible-md visible-lg col-sm-12">
+	<h1 class="col-sm-12 visible-sm" style="margin-top:0.5em;"></h1>
+	<h1 class="col-sm-12 visible-md visible-lg" style="margin-top:1em;"></h1>
+      </div>
+      <p class="text-right col-sm-10 col-sm-offset-1"
+	 style="white-space:nowrap;">
+	*ここでのプロセス空間とはメモリ、<wbr>プロセッサなどのコンピュータ上の資源です。
+      </p>
+    </div>
+  </div>
+  
+  <div class="container-fluid" style="margin-top:1em;">
+    <div class="row">
+      <div class="col-sm-5 col-sm-offset-1">
+	<img src="/img/home/clip1.svg" width="100%"/>
+	<p>
+	  サーバ、PC、スマートフォン、ブラウザなどコンピュータの種類を選ばず相互に接続します。
+	  接続したコンピュータでプロセス空間を共有し、動作中のアプリケーションが自由に行き来できるようになります。
+	</p>
+      </div>
+      <div class="col-sm-5">
+	<img src="/img/home/clip2.svg" width="100%"/>
+	<p>
+	  プロセス空間は状態に合わせて柔軟に変化します。
+	  ときには１つのアプリケーションを幾つものコンピュータに分散して処理を行い、ときにはオフラインアプリケーションのように１つのコンピューでも動きつづけます。(開発中)
+	</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <h2 class="col-sm-10 col-sm-offset-1">ニュース</h2>  
+    </div>
+
+    {% for post in site.posts %}
+    {% if post.lang == "ja" and post.category == "news" %}
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+	<h4>
+	  <span class="label label-default">{{ post.date | date: "%b %-d, %Y" }}</span>
+	  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	</h4>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
