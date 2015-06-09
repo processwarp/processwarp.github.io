@@ -50,7 +50,7 @@ PROCESS WARPのコンパイルのためには既存パッケージの他にSocke
     $ cd processwarp
     $ mkdir build
     $ cd build
-    $ cmake -D <作業ディレクトリ>/socket.io-client-cpp/build ..
+    $ cmake -D SIO_DIR=<作業ディレクトリ>/socket.io-client-cpp/build ..
     $ make
 
 コンパイルが終了すると、build/srcディレクトリ下にcoreプログラムが格納されます。
