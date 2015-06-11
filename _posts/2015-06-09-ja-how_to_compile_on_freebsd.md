@@ -66,12 +66,12 @@ conf/conf_sample.jsonをコピーし、各自の環境に合わせて編集し�
         "server":  "https://prev.processwarp.org/",
         "account": "<WEB版で登録したアカウント>",
         "password":"<WEB版で登録したパスワード>",
-        "device-name": "デバイス名",
+        "device-name": "<デバイス名>",
     
         "libs":[],
     
         "lib-filter":[
-	        "conf/libfilter_freebsd.jsonへのフルパス"
+	        "<conf/libfilter_freebsd.jsonへのフルパス>"
         ],
     
         "apps":[]
