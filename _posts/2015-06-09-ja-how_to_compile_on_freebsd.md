@@ -3,8 +3,11 @@ layout: post
 title:  FreeBSDでのネイティブクライアントのコンパイル方法
 date:   2015-06-09 17:00:00
 lang:   ja
+obsolute: true
 category: docs
 ---
+
+#### [```このドキュメントは古いものです。「ネイティブクライアントのインストール方法」をご覧ください。```](/docs/2015/06/21/ja-required_install.html)
 
 FreeBSD環境でのネイティブクライアントのコンパイル方法について説明します。
 作業はおおまかに以下の4つの項目にわかれています。
