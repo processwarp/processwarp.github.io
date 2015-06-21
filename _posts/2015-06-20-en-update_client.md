@@ -2,7 +2,7 @@
 layout: post
 title:  Change format of password at native client.
 date:   2015-06-20 18:00:00
-lang:   ja
+lang:   en
 category: news
 ---
 
