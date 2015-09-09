@@ -5,4 +5,44 @@ permalink: /en/docs/
 lang:   en
 ---
 
-Sorry. Please see <a href="/ja/docs/">Japanese page</a>.
+<ul class="post-list">
+  {% for post in site.posts %}
+  {% if post.category == "docs" and post.obsolute != true %}
+  <li>
+    <span class="label label-default">{{ post.date | date: "%b %-d, %Y" }}</span>
+    {% if post.lang == "ja" %}
+    <span class="label label-danger">ja</span>
+    {% elsif post.lang == "en"  %}
+    <span class="label label-primary">en</span>
+    {% else %}
+    <span class="label label-success">{{ post.lang}}</span>
+    {% endif %}
+    
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+<h1>Deprecated documentations</h1>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  {% if post.category == "docs" and post.obsolute %}
+  <li>
+    <span class="label label-default">{{ post.date | date: "%b %-d, %Y" }}</span>
+    {% if post.lang == "ja" %}
+    <span class="label label-danger">ja</span>
+    {% elsif post.lang == "en"  %}
+    <span class="label label-primary">en</span>
+    {% else %}
+    <span class="label label-success">{{ post.lang}}</span>
+    {% endif %}
+
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+
