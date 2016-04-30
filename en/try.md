@@ -1,56 +1,79 @@
 ---
 layout: page
-title:  How to try on web browser.
+title:  How to try PROCESS WARP.
 permalink: /en/try/
 lang:   en
 ---
 
 ## Try out an application migrate function
 
-We can try an application migrate function on PROCESS WARP in web page.
-Please access to ***[https://prev.processwarp.org/](https://prev.processwarp.org/)*** and try it along the following description.You should prepare two computers or run two web browsers on single computer. Please reload after a moment when that dose not work.
+We can try an application migrate function by below process.
+
+* Get your account
+* Install PROCESS WARP
+* Launch a sample application
+* Migrate the application to other device
+* Quit PROCESS WARP
 
 ### Get your account
 
-At first you should get your account. You use the same account on many devices you having.
-You should open dialog by select "Sign up" for getting your account.
-![Select register.](/ja/img/try/ss01.png){: .ss}
+At first you should get your account.
+You should open the web page by select "Signup" on this page.
+![Select sign-up from menu.](/en/img/try/ss01.png){: .ss}
 
-You should check "Terms of service" befor get your account.
 You input forms and select "Sign up", your account will be issued.
-![Sign up.](/ja/img/try/ss02.png){: .ss}
+![Fill the form.](/en/img/try/ss02.png){: .ss}
 
-### Login
+### Install PROCESS WARP
 
-In login page, You should input your account word in form and select "Login".And login on other web browser by the same account too.
-![Login.](/ja/img/try/ss03.png){: .ss}
+#### Installing on MacOS X, Ubuntu Linux, Linux Mint.
 
-Please pick your using device.
-If you want to bind new device, you should select "new device" and input "new device name".
-Finally, you select "Bind".
-![Bind.](/ja/img/try/ss04.png){: .ss}
+Launch the installer by inputing below commands on your terminal.
+Installer require your OS's password to install requiring programs if needed.
 
-### Launch sample application
+```sh
+$ cd <PROCESS WARP working dir>
+$ git clone https://github.com/processwarp/processwarp.git
+$ script/build.sh
+```
 
-Please select "Home" on side menu
-and select "hello world" on icons.
-After open dialog, you select device that bind a while ago and select "Load".
-This application shows "Hello world" and number that is increased by one simply.When migrate application, you will notice that it is continuously.
-Source code of sample applicaion is ***[this C file](/sample/hello.c)***.
-![Load LLVM IR.](/ja/img/try/ss05.png){: .ss}
-![Load LLVM IR.](/ja/img/try/ss06.png){: .ss}
+#### Installing on Android.
 
-### Migrate sample application to other device
+Download the package file from ***[this link](https://prev.processwarp.org/processwarp.apk)*** by browser on your android and install.
 
-Please select launched sample application by side menu.
-You can open sub menu by selecting again it, and select "Warp" by sub menu.(You can migrate or stop your migration by any device)
-![Show submenu.](/ja/img/try/ss07.png){: .ss}
+### Launch a sample application
 
-You can select device to warp destination and "Warp", your application has warped.You can close source web browser in this status.
-![Select Target.](/ja/img/try/ss08.png){: .ss}
-![Result.](/ja/img/try/ss09.png){: .ss}
+Download the sample application from ***[this link](/sample/try.ll)***.
+Source code of the sample applicaion is ***[this C file](/sample/hello.c)***.
+Launch PROCESS WARP by inputing below command on your terminal.
 
-### Make application end
+```sh
+$ <PROCESS WARP working dir>/script/run_gui.sh
+```
 
-Please open sub menu as same as Migrate sample application.
-After select "Exit", application will be end.
+Please input your account and select "connect" button.
+
+![Input the form to connect.](/ja/img/try/ss03.png){: .ss}
+
+You can select the sample application by selecting below button and opening a dialog.
+
+![Select a application.](/ja/img/try/ss04.png){: .ss}
+
+The sample application drow a robot. And he do some simple calculation and tell calculated results.
+
+![The appilcation is runnning.](/ja/img/try/ss05.png){: .ss}
+
+### Migrate the application to other device
+
+Please launch PROCESS WARP on other device.
+The application launched on other device should migrate to using device by touching below button.
+
+![PROCESS WARP.](/ja/img/try/ss06.png){: .ss}
+
+### Quit PROCESS WARP
+
+You can halt PROCESS WARP on MacOS X and Linux by inputing Control + C at the terminal.
+
+On android, force termination by settings.
+
+![Kill PROCESS WARP.](/en/img/try/ss07.png){: .ss}
