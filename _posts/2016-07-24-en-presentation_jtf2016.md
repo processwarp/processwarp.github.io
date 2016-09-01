@@ -1,18 +1,18 @@
 ---
 layout: post
-title:  July Tech Festa 2016でPROCESS WARPについての公演を行いました。
+title:  I gave a talk on PROCESS WARP at July Tech Festa.
 date:   2016-07-24 24:00:00
-lang:   ja
+lang:   en
 category: news
 ---
 
-[July Tech Festa 2016](http://2016.techfesta.jp/)でPROCESS WARPについての公演を行いました。
-プレゼンテーションでは、PROCESS WARPがどのようなものか、基本的な仕組み、どのようなシーンで使えるかなどについて説明しています。
+I gave a talk on PROCESS WARP at [July Tech Festa 2016](http://2016.techfesta.jp/).
+I talked about like what PROCESS WARP is, architecture, and use case on slide show.
 
 <div class="container-fluid" style="margin-top:1em;">
   <div class="row">
   <h3 class="col-sm-10 col-sm-offset-1">
-プレゼンテーション
+  Slide show.
   </h3>
     <div class="col-sm-10 col-sm-offset-1">
       <div style="position:relative; padding-bottom:75%; padding-top:30px; height:0; overflow:hidden;">
@@ -32,7 +32,7 @@ category: news
     </div>
 
     <h3 class="col-sm-10 col-sm-offset-1">
-デモンストレーション動画1
+    The movie of demonstration part 1.
     </h3>
     <div class="col-sm-10 col-sm-offset-1">
       <div style="position:relative; padding-bottom:56.25%; padding-top:30px; height:0; overflow:hidden;">
@@ -45,7 +45,7 @@ category: news
     </div>
 
     <h3 class="col-sm-10 col-sm-offset-1">
-デモンストレーション動画2
+    The movie of demonstration part 1.
     </h3>
     <div class="col-sm-10 col-sm-offset-1">
       <div style="position:relative; padding-bottom:56.25%; padding-top:30px; height:0; overflow:hidden;">
