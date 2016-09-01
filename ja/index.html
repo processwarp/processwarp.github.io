@@ -4,94 +4,47 @@ title: PROCESS WARP
 lang: ja
 ---
 
-<div class="home">
-  <div class="container-fluid" style="background-image: url('/img/home/clip0.jpg'); background-repeat: no-repeat; background-position:center center; background-size:cover; color:#fff;">
-    <div class="row">
-      <h6 class="text-right col-sm-10 col-sm-offset-1" style="color:gray;">
-	Image by
-	<a href="https://www.flickr.com/photos/maleny_steve/205510696/">Serendigity</a>
-	.
-      </h6>
-      <div class="visible-sm visible-md visible-lg col-sm-12">
-	<h1 class="col-sm-12 visible-sm" style="margin-top:0.5em;"></h1>
-	<h1 class="col-sm-12 visible-md visible-lg" style="margin-top:1em;"></h1>
-      </div>
-      
-      <h2 class="visible-xs" style="text-shadow: 0 0 3px black;">
-	SFのように相互接続したプロセス空間*で自由にアプリケーションを使いたい。
-      </h2>
-      <h1 class="text-center col-sm-10 col-sm-offset-1 visible-sm"
-	  style="text-shadow: 0 0 3px black;">
-	SFのように相互接続した<br>
-	プロセス空間*で自由に<br>
-	アプリケーションを使いたい。
-      </h1>
-      <h1 class="text-center col-sm-10 col-sm-offset-1 visible-md visible-lg"
-	  style="text-shadow: 0 0 3px black;">
-	SFのように相互接続したプロセス空間*で<br>
-	自由にアプリケーションを使いたい。
-      </h1>
-      <div class="visible-sm visible-md visible-lg col-sm-12">
-	<h1 class="col-sm-12 visible-sm" style="margin-top:0.5em;"></h1>
-	<h1 class="col-sm-12 visible-md visible-lg" style="margin-top:1em;"></h1>
-      </div>
-      <p class="text-right col-sm-10 col-sm-offset-1"
-	 style="white-space:nowrap;">
-	*ここでのプロセス空間とはメモリ、<wbr>プロセッサなどのコンピュータ上の資源です。
-      </p>
+<div>
+  <div class="hero">
+    <h1 class="sp-hide">デバイスのチカラをつなぐ</h1>
+    <div class="pc-hide">
+      <h1>デバイスのチカラをつなぐ</h1>
+      <a href="{{ site.baseurl }}/{{ page.lang }}/getstarted.html">Get started</a>
     </div>
   </div>
-
-  <div class="container-fluid" style="margin-top:1em;">
-    <div class="row">
-      <h2 class="col-sm-10 col-sm-offset-1">
-        PROCESS WARPでこんなことができるようになる
-      </h2>
-      <div class="col-sm-8 col-sm-offset-2">
-        <div style="position:relative; padding-bottom:56.25%; padding-top:30px; height:0; overflow:hidden;">
-          <iframe width="560" height="315"
-                  style="position: absolute; top:0; left:0; width:100%; height:100%;"
-                  src="https://www.youtube.com/embed/F1NOcRpgwoY"
-                  frameborder="0" allowfullscreen>
-          </iframe>
+  <section class="introduction">
+    <h2>PROCESS WARPでできること</h2>
+    <div class="video-introducing">
+      <iframe src="https://www.youtube.com/embed/CHEZfCkvvRk"></iframe>
+    </div>
+    <div class="image-introducing fluid outermost">
+      <div class="gutter g-1 pc-1-2">
+        <div class="card">
+          <h3>コンピュータの種類を選ばず<br>相互に接続します</h3><img src="/img/home/clip1.svg" alt="clip1">
+          <p>サーバ、PC、スマートフォン、ブラウザなどコンピュータの種類を選ばず相互に接続します。接続したコンピュータでプロセス空間を共有し、動作中のアプリケーションが自由に行き来できるようになります。</p>
+        </div>
+      </div>
+      <div class="gutter g-1 pc-1-2">
+        <div class="card">
+          <h3>プロセス空間は状態に合わせて<br>柔軟に変化します</h3><img src="/img/home/clip2.svg" alt="clip2">
+          <div class="clip"></div>
+          <p>プロセス空間は状態に合わせて柔軟に変化します。ときには1つのアプリケーションを幾つものコンピュータに分散して処理を行い、ときにはオフラインアプリケーションのように1つのコンピュータでも動き続けます。</p>
         </div>
       </div>
     </div>
-  </div>
-  
-  <div class="container-fluid" style="margin-top:1em;">
-    <div class="row">
-      <div class="col-sm-5 col-sm-offset-1">
-	<img src="/img/home/clip1.svg" width="100%"/>
-	<p>
-	  サーバ、PC、スマートフォン、ブラウザなどコンピュータの種類を選ばず相互に接続します。
-	  接続したコンピュータでプロセス空間を共有し、動作中のアプリケーションが自由に行き来できるようになります。
-	</p>
-      </div>
-      <div class="col-sm-5">
-	<img src="/img/home/clip2.svg" width="100%"/>
-	<p>
-	  プロセス空間は状態に合わせて柔軟に変化します。
-	  ときには１つのアプリケーションを幾つものコンピュータに分散して処理を行い、ときにはオフラインアプリケーションのように１つのコンピュータでも動きつづけます。(開発中)
-	</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <h2 class="col-sm-10 col-sm-offset-1">ニュース</h2>  
-    </div>
+  </section>
+  <section class="news">
+    <h2>ニュース</h2>
+    <ul class="vertical scrollable outermost">
 
     {% for post in site.posts %}
     {% if post.lang == "ja" and post.category == "news" %}
-    <div class="row">
-      <div class="col-sm-10 col-sm-offset-1">
-	<h4>
-	  <span class="label label-default">{{ post.date | date: "%b %-d, %Y" }}</span>
-	  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-	</h4>
-      </div>
-    </div>
+      <li>
+        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
     {% endif %}
     {% endfor %}
-  </div>
+    </ul>
+  </section>
 </div>

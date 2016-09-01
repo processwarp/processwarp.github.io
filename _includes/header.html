@@ -1,32 +1,36 @@
-<header class="site-header">
-  <nav class="navbar navbar-default" style="margin-bottom:0;">
-    <div class="container-fluid col-sm-10 col-sm-offset-1">
-
-      <div class="navbar-header">
-	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-	</button>
-	<a class="navbar-brand" href="{{ site.baseurl }}/{{ page.lang }}/">
-	  {{ site.title }}
-	</a>
-      </div>
-
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	<ul class="nav navbar-nav navbar-right">
-	  <li><a class="page-link" href="{{ site.baseurl }}/{{ page.lang }}/try/">Try!</a></li>
-	  <li><a class="page-link" href="{{ site.baseurl }}/{{ page.lang }}/docs/">Documentation</a></li>
-          <li><a class="page-link" href="https://prev.processwarp.org/signup_{{ page.lang }}.html">Signup</a></li>
-	  <li><a class="page-link" href="https://github.com/{{ site.github_account }}">GitHub</a></li>
-	  {% if page.lang == "ja" %}
-	  <li><a class="page-link" href="/en/">English</a></li>
-	  {% else %}
-	  <li><a class="page-link" href="/ja/">日本語</a></li>
-	  {% endif %}
-	</ul>
-      </div>
-
+<header>
+  <div class="fluid outermost">
+    <div class="logo"><a href="{{ site.baseurl }}/{{ page.lang }}/"><img src="/img/logo.png" alt="PROCESS WARP"></a></div>
+    <nav class="sp-hide">
+      <ul class="fluid">
+        <li><a href="{{ site.baseurl }}/{{ page.lang }}/getstarted.html">Get started</a></li>
+        <li><a href="{{ site.baseurl }}/{{ page.lang }}/docs/">Document</a></li>
+        <li><a href="https://prev.processwarp.org/signup_{{ page.lang }}.html">Sign-up</a></li>
+        <li><a href="https://github.com/processwarp/processwarp">GitHub</a></li>
+      </ul>
+    </nav>
+    <div id="menu" class="pc-hide">
+      <div><img src="/img/menu.png" width="32" height="24" alt="menu"></div>
+      <div class="sp-hide"><img src="/img/close.png" width="28" height="28" alt="close"></div>
+    </div>
+    {% if page.lang == "ja" %}
+    <a href="/en/" class="translate-en sp-hide">E</a>
+    {% else %}
+    <a href="/ja/"class="translate-en sp-hide">日</a>
+    {% endif %}
+    <div class="install sp-hide">
+      <div><a href="{{ site.baseurl }}/{{ page.lang }}/getstarted.html">Get stated</a></div>
+    </div>
   </div>
+  <ul id="menu-list" class="pc-hide">
+    <li><a href="{{ site.baseurl }}/{{ page.lang }}/getstarted.html">Get started</a></li>
+    <li><a href="{{ site.baseurl }}/{{ page.lang }}/docs/">Document</a></li>
+    <li><a href="https://prev.processwarp.org/signup_{{ page.lang }}.html">Sign-up</a></li>
+    <li><a href="https://github.com/processwarp/processwarp">GitHub</a></li>
+    {% if page.lang == "ja" %}
+    <li><a href="/en/">English</a></li>
+    {% else %}
+    <li><a href="/ja/">日本語</a></li>
+    {% endif %}
+  </ul>
 </header>

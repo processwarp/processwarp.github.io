@@ -1,0 +1,56 @@
+---
+layout: default
+title: Get Started
+lang:   ja
+---
+
+<div>
+  <div class="outermost">
+    <div class="heading">
+      <h1>Get Started</h1>
+      <p>PROCESS WARPは以下の手順で試すことができます。</p>
+    </div>
+    <section class="tutorial">
+      <h2>アカウントを作成する</h2>
+      <p>まず、アカウントを作成します。メニューにある<a href="https://prev.processwarp.org/signup_ja.html">Sign-up</a>からアカウント作成画面を開きます。</p>
+      <p>必要事項を入力し、「アカウントを作成する」を選択すると、アカウントの作成が完了します。</p>
+    </section>
+    <section class="tutorial">
+      <h2>プログラムをインストールする</h2>
+      <section class="case">
+        <h3>MacOS X, Ubuntu Linux, Linux Mintの場合</h3>
+        <p>ターミナルから以下のコマンドを入力し、インストーラーを起動します。</p>
+        <p>途中、依存するプログラムのインストールのため、パスワードの入力が求められる場合があります。</p>
+        <pre><code>$ cd &lt;PROCESS WARP working dir&gt;
+$ git clone https://github.com/processwarp/processwarp.git
+$ script/build.sh</code></pre>
+      </section>
+      <section class="case">
+        <h3>Androidの場合</h3>
+        <p><a href="https://prev.processwarp.org/processwarp.apk">こちらのリンク</a>から、Android用APKファイルをダウンロードします。</p>
+        <p>サードパーティのアプリケーションのインストールを許可した状態で、ファイルを選択し、管理画面に従ってインストールします。</p>
+      </section>
+    </section>
+    <section class="tutorial">
+      <h2>サンプルアプリケーションを起動する</h2>
+      <p>※アプリケーションはPCからのみ、起動できます。</p>
+      <p><a href="/sample/try.ll">こちらのリンクから</a>サンプルアプリケーションをダウンロードしておきます。</p>
+      <p>サンプルアプリケーションのソースコードは<a href="/sample/try.c">こちらのプログラム</a>です。ターミナルから以下のコマンドを入力し、PROCESS WARPを起動します。</p>
+      <pre><code>$ &lt;PROCESS WARP working dir&gt;/script/run_gui.sh</code></pre>
+      <p>アカウントの入力が求められるので、先ほど作成したアカウント情報を入力します。</p>
+      <p>以下のボタンを選択することで、アプリケーションを選ぶことができます。ダイアログが開くので、ダウンロードしたサンプルアプリケーションを選択します。</p>
+      <p><img src="/ja/img/try/ss01.png"/></p>
+      <p>ロボットが表示されます。簡単な計算を行い、結果を教えてくれます。</p>
+    </section>
+    <section class="tutorial">
+      <h2>アプリケーションを他のデバイスに移動する</h2>
+      <p>他のデバイスでもPROCESS WARPを起動します。以下のボタンを選択すると、操作しているデバイスに動いているアプリケーションが移動してきます。</p>
+      <p><img src="/ja/img/try/ss02.png"/></p>
+    </section>
+    <section class="tutorial">
+      <h2>プログラムを終了する</h2>
+      <p>現在、PROCESS WARPの終了機能は未完成です。</p>
+      <p>MacOS XとLinuxでは、ターミナルをアクティブにした状態でControl+Cの入力をしてプログラムが停止できます。Androidでは、設定画面のアプリからPROCESS WARPを選択し、強制終了してください。</p>
+    </section>
+  </div>
+</div>

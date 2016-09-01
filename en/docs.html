@@ -1,48 +1,37 @@
 ---
-layout: page
-title:  Documentation
+layout: default
+title:  Document
 permalink: /en/docs/
 lang:   en
 ---
 
-<ul class="post-list">
-  {% for post in site.posts %}
-  {% if post.category == "docs" and post.obsolute != true %}
-  <li>
-    <span class="label label-default">{{ post.date | date: "%b %-d, %Y" }}</span>
-    {% if post.lang == "ja" %}
-    <span class="label label-danger">ja</span>
-    {% elsif post.lang == "en"  %}
-    <span class="label label-primary">en</span>
-    {% else %}
-    <span class="label label-success">{{ post.lang}}</span>
-    {% endif %}
-    
-    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-  </li>
-  {% endif %}
-  {% endfor %}
-</ul>
-
-<h1>Deprecated documentations</h1>
-
-<ul class="post-list">
-  {% for post in site.posts %}
-  {% if post.category == "docs" and post.obsolute %}
-  <li>
-    <span class="label label-default">{{ post.date | date: "%b %-d, %Y" }}</span>
-    {% if post.lang == "ja" %}
-    <span class="label label-danger">ja</span>
-    {% elsif post.lang == "en"  %}
-    <span class="label label-primary">en</span>
-    {% else %}
-    <span class="label label-success">{{ post.lang}}</span>
-    {% endif %}
-
-    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-  </li>
-  {% endif %}
-  {% endfor %}
-</ul>
-
-
+<div>
+  <div class="outermost">
+    <section>
+      <h2>Document</h2>
+      <ul class="vertical">
+        {% for post in site.posts %}
+        {% if post.category == "docs" and post.obsolute != true %}
+        <li>
+          <span>{{ post.date | date: "%b %-d, %Y" }}&nbsp;&nbsp;&nbsp;&nbsp;{{ post.lang }}</span>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
+    <section>
+      <h2>Deprecated document</h2>
+      <ul class="vertical scrollable">
+        {% for post in site.posts %}
+        {% if post.category == "docs" and post.obsolute %}
+        <li>
+          <span>{{ post.date | date: "%b %-d, %Y" }}&nbsp;&nbsp;&nbsp;&nbsp;{{ post.lang }}</span>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+</div>

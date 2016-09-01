@@ -4,75 +4,54 @@ title: PROCESS WARP
 lang: en
 ---
 
-<div class="home">
-  <div class="container-fluid" style="background-image: url('/img/home/clip0.jpg'); background-repeat: no-repeat; background-position:center center; background-size:cover; color:#fff;">
-    <div class="row">
-      <h6 class="text-right col-sm-10 col-sm-offset-1" style="color:gray;">
-	Image by
-	<a href="https://www.flickr.com/photos/maleny_steve/205510696/">Serendigity</a>
-	.
-      </h6>
-      <div class="visible-sm visible-md visible-lg col-sm-12">
-	<h1 class="col-sm-12 visible-sm" style="margin-top:0.5em;"></h1>
-	<h1 class="col-sm-12 visible-md visible-lg" style="margin-top:1em;"></h1>
-      </div>
-      
-      <h2 class="visible-xs" style="text-shadow: 0 0 3px black;">
-	Freely connect process spaces* across multiple computers, just like science fiction!
-      </h2>
-      <h1 class="text-center col-sm-10 col-sm-offset-1 visible-sm visible-md visible-lg"
-	  style="text-shadow: 0 0 3px black;">
-	Freely connect process spaces* across multiple computers, just like science fiction!
-      </h1>
-      <div class="visible-sm visible-md visible-lg col-sm-12">
-	<h1 class="col-sm-12 visible-sm" style="margin-top:0.5em;"></h1>
-	<h1 class="col-sm-12 visible-md visible-lg" style="margin-top:1em;"></h1>
-      </div>
-      <p class="text-right col-sm-10 col-sm-offset-1"
-	 style="white-space:nowrap;">
-	The "process space" refers to<wbr>
-	the processor and memory resources etc.
-      </p>
+<div>
+  <div class="hero">
+    <h1 class="sp-hide">Combining the power of your devices.</h1>
+    <div class="pc-hide">
+      <h1>Combining the power of your devices.</h1>
+      <a href="{{ site.baseurl }}/{{ page.lang }}/getstarted.html">Get started</a>
     </div>
   </div>
-  
-  <div class="container-fluid" style="margin-top:1em;">
-    <div class="row">
-      <div class="col-sm-5 col-sm-offset-1">
-	<img src="/img/home/clip1.svg" width="100%"/>
-	<p>
-	  Connect servers, PCs, smart phones, and web browsers together as one - no need to select a single platform.
-	  Share the process space among the connected computers and freely pass the running application between machines.
-	</p>
-      </div>
-      <div class="col-sm-5">
-	<img src="/img/home/clip2.svg" width="100%"/>
-	<p>
-	  The process space changes flexibly according to the environment.
-
-	  There may be times where you need to distribute processing of an application
-    across a number of computers, while at other times you want to continue
-    processing an application offline on a single computer.
-	  (Under active development)
-	</p>
-      </div>
+  <section class="introduction">
+    <h2>Potential of PROCESS WARP</h2>
+    <div class="video-introducing">
+      <iframe src="https://www.youtube.com/embed/CHEZfCkvvRk"></iframe>
     </div>
-
-    <div class="row">
-      <h2 class="col-sm-10 col-sm-offset-1">News</h2>  
-    </div>
-
-    {% for post in site.posts %}
-    {% if post.lang != "ja" and post.category == "news" %}
-    <div class="row">
-      <div class="col-sm-10 col-sm-offset-1">
-	<h4>
-	  <span class="label label-default">{{ post.date | date: "%b %-d, %Y" }}</span>
-	  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-	</h4>
+    <div class="image-introducing fluid outermost">
+      <div class="gutter g-1 pc-1-2">
+        <div class="card">
+          <h3>コンピュータの種類を選ばず<br>相互に接続します</h3><img src="/img/home/clip1.svg" alt="clip1">
+          <p>Connect servers, PCs, smart phones, and web browsers together as one - no need to select a single platform.
+	    Share the process space among the connected computers and freely pass the running application between machines.
+          </p>
+        </div>
+      </div>
+      <div class="gutter g-1 pc-1-2">
+        <div class="card">
+          <h3>プロセス空間は状態に合わせて<br>柔軟に変化します</h3><img src="/img/home/clip2.svg" alt="clip2">
+          <div class="clip"></div>
+          <p>The process space changes flexibly according to the environment.
+	    There may be times where you need to distribute processing of an application
+            across a number of computers, while at other times you want to continue
+            processing an application offline on a single computer.
+	    (Under active development)
+          </p>
+        </div>
       </div>
     </div>
-    {% endif %}
-    {% endfor %}
-  </div>
+  </section>
+  <section class="news">
+    <h2>News</h2>
+    <ul class="vertical scrollable outermost">
+
+      {% for post in site.posts %}
+      {% if post.lang != "ja" and post.category == "news" %}
+      <li>
+        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
 </div>
