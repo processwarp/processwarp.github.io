@@ -47,7 +47,7 @@ header > div {
 }
 
 header .logo {
-  margin-right: 104px;
+  margin-right: 66px;
   vertical-align: middle;
 }
 
@@ -82,7 +82,8 @@ header nav {
 header nav ul li {
   text-align: center;
   height: 132px;
-  width: 138px;
+  /* width: 138px; */
+  margin: 0 24px;
 }
 
 header nav ul li a {
@@ -149,7 +150,7 @@ header .install div a:active header .install div a:hover {
 }
 
 header a.translate-en {
-  margin-left: 28px;
+  margin-left: 0px;
   border: 1px solid #bc1b21;
   border-radius: 50%;
   color: #bc1b21;
