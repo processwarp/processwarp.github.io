@@ -338,6 +338,11 @@ footer p {
   }
 }
 
+footer .logo {
+  margin-right: 6px;
+  width: 24px;
+}
+
 .heading {
   margin: 110px 0;
 }
