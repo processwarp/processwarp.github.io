@@ -612,6 +612,10 @@ section.page pre {
   }
 }
 
+section.page img {
+  max-width: 100%;
+}
+
 @media only screen and (max-width: 1180px) {
   .sp-hide {
     display: none !important;

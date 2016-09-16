@@ -21,6 +21,19 @@ lang:    ja
       </ul>
     </section>
     <section>
+      <h2>Log</h2>
+      <ul class="vertical">
+        {% for post in site.posts %}
+        {% if post.category == "logs" %}
+        <li>
+          <span>{{ post.date | date: "%b %-d, %Y" }}&nbsp;&nbsp;&nbsp;&nbsp;{{ post.lang }}</span>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
+    <section>
       <h2>Old-Document</h2>
       <ul class="vertical scrollable">
         {% for post in site.posts %}
