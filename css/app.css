@@ -524,8 +524,7 @@ section.tutorial h2 {
 
 section.tutorial img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto;
 }
 
 @media only screen and (max-width: 1180px) {
@@ -614,6 +613,7 @@ section.page pre {
 
 section.page img {
   max-width: 100%;
+  margin: 20px auto;
 }
 
 @media only screen and (max-width: 1180px) {
