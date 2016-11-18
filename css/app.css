@@ -29,7 +29,7 @@ a:link, a:visited, a:active, a:hover {
 header {
   position: relative;
   z-index: 3;
-  font-size: 16px;
+  font-size: 15px;
   background: #fafbfd;
   box-shadow: 0 2px 1px #e9e9e9;
   width: 100%;
