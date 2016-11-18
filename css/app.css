@@ -616,6 +616,16 @@ section.page img {
   margin: 20px auto;
 }
 
+section.page ul {
+  list-style: disc;
+  margin: 0 0 0 1em;
+}
+
+section.page ul ul {
+  list-style: circle;
+  margin: 0 0 0 1em;
+}
+
 @media only screen and (max-width: 1180px) {
   .sp-hide {
     display: none !important;
