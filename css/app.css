@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
 .fluid {
   letter-spacing: -.4em;
 }
@@ -9,8 +11,7 @@
 }
 
 body {
-  /* font-family: "Kozuka Gothic Pr6N"; */
-  font-family: sans-serif;
+  font-family: 'Noto Sans Japanese', sans-serif;
   position: relative;
   color: #323333;
   letter-spacing: .1rem;
