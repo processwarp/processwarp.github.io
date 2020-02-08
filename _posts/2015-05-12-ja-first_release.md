@@ -7,6 +7,6 @@ category: news
 ---
 
 PROCESS WARPのweb版フロントエンドのクローズド版を公開しました。
-利用するには[https://prev.processwarp.org/](https://prev.processwarp.org/)にアクセスしてください。
+利用するには[Sign-up]({{ site.baseurl}}/{{ page.lang}}/signup.html)にアクセスしてください。
 詳しい使い方はメニューから[Try!](/ja/try/)を御覧ください。
 不具合、お気づきの点がございましたら、お手数ですが伊藤までお知らせください。
